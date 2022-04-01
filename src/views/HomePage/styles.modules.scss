@@ -1,0 +1,47 @@
+    $color_1: blue;
+    $color_2: #beb0b3;
+    $font-family_1: 'Rubik', sans-serif;
+
+.homePage {
+    padding: 74px;
+    //background: url('../../images/image1.png');
+    border: 70px;
+
+}  
+    
+    h1 {
+        color: $color_1;
+        font-size: 230px;
+    }
+    button {
+        font-family: $font-family_1;
+        width: 160px;
+        border-radius: 100px;
+        height: 52px;
+        color: $color_2;
+        background: #ff3366;
+        border: #ff3366;
+        font-weight: 800;
+        // margin: 0px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+
+  button:hover {
+    background-color: $color_1 !important;
+  }
+  @keyframes play {
+	100% {
+		background-position: -1000px;
+	}
+}
+animation {
+	width: 100px;
+	height: 50px;
+	background: url('../../images/image1.png') left center;
+	background-size: cover;
+	animation: play 1.5 steps(10) infinite;
+	display: inline-block;
+}
+
